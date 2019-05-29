@@ -46,6 +46,28 @@ inputs:
         inputBinding:
             position: 6
             prefix: "-outseq"
+    "minimum":
+        type: int?
+        doc: "[1] Minimum size for a block mutation (Integer 0 or more)"
+        default: 1
+        inputBinding:
+            position: 7
+            prefix: "-minimum"
+    "maximum":
+        type: int?
+        doc: "[1] Maximum size for a block mutation (Any integer value)"
+        default: 10
+        inputBinding:
+            position: 8
+            prefix: "-maximum"
+    "inframe":
+        type: boolean
+        doc: "[N] Do 'codon' and 'block' operations in frame"
+        default: false
+        inputBinding:
+            position: 9
+            prefix: "-inframe"
+
 
 outputs:
     "output_file":
