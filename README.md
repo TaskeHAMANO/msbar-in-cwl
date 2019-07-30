@@ -32,7 +32,7 @@ count: 1000
 
 ```
 cwl-runner --outdir ${PATH_TO_OUTPUT_DIR} \
-           fastANI.cwl \
+           msbar.cwl \
            inputs.yml
 ```
 
